@@ -53,17 +53,17 @@
                     <option value="fr">🇫🇷</option>
                     <option value="tr" selected>🇹🇷 Türkçe</option>
                 </select>
-                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200">☰</button>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
             </div>
         </div>
         
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
-            <a href="#neden" class="block text-white hover:text-green-200 py-2">Neden?</a>
-            <a href="#timeline" class="block text-white hover:text-green-200 py-2">Zaman Çizelgesi</a>
-            <a href="#faq" class="block text-white hover:text-green-200 py-2">Sorular</a>
-            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2">Statüler</a>
-            <a href="#contact" class="block text-white hover:text-green-200 py-2">İletişim</a>
+            <a href="#neden" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Neden?</a>
+            <a href="#timeline" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Zaman Çizelgesi</a>
+            <a href="#faq" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Sorular</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statüler</a>
+            <a href="#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">İletişim</a>
         </div>
     </nav>
 
@@ -234,27 +234,7 @@
             }
         }
         
-        // Toggle mobile menu
-        function setupMobileMenu() {
-            const menuBtn = document.getElementById('mobileMenuBtn');
-            const mobileMenu = document.getElementById('mobileMenu');
-            
-            if (menuBtn && mobileMenu) {
-                menuBtn.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-                
-                // Close menu when link is clicked
-                const links = mobileMenu.querySelectorAll('a');
-                links.forEach(link => {
-                    link.addEventListener('click', function() {
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            }
-        }
-        
-        // Set the language selector to current language
+        // Set the language selector to current language on page load
         window.addEventListener('load', function() {
             const currentFile = window.location.pathname.split('/').pop() || 'index.html';
             const langMap = {
@@ -275,17 +255,7 @@
             if (selectMobile && langMap[currentFile]) {
                 selectMobile.value = langMap[currentFile];
             }
-            
-            // Setup mobile menu after page loads
-            setupMobileMenu();
         });
-        
-        // Setup menu immediately if DOM is already ready
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', setupMobileMenu);
-        } else {
-            setupMobileMenu();
-        }
     </script>
 
 </body>
