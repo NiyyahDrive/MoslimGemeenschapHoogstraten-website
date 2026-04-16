@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waarom? - De Reis Naar Transparantie - Moslim Gemeenschap Hoogstraten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, #064e3b, #a3e635);
+        }
+        
+        @media (max-width: 768px) {
+            .timeline::before {
+                left: 25px;
+            }
+        }
+        
+        .timeline-item {
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 24px;
+            background: #064e3b;
+            border: 4px solid white;
+            border-radius: 50%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 0 0 4px #e5e7eb;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-item::before {
+                left: 25px;
+            }
+        }
+        
+        .timeline-content {
+            width: 45%;
+            margin-left: auto;
+            padding-right: 50px;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: 0;
+            margin-right: auto;
+            padding-right: 0;
+            padding-left: 50px;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                width: calc(100% - 65px);
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                padding-left: 50px !important;
+                padding-right: 0 !important;
+            }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Disclaimer:</strong> Dit is een onafhankelijk platform van de moskeegemeenschap in Hoogstraten. Wij zijn niet gelieerd aan het officiële bestuur van de Tawheed vzw, maar treden op als bezorgde leden die streven naar transparantie en goed beheer.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-12 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 Moslim Gemeenschap Hoogstraten</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-4">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index.html" class="hover:text-green-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-green-200">Over Ons</a></li>
+                    <li><a href=\"waarom.html\" class=\"hover:text-green-200 font-bold text-green-300\">Waarom?</a></li>
+                    <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statuten</a></li>
+                    <li><a href="wist-u-dat-de-wet.html" class="hover:text-green-200">Wist u dat?</a></li>                    <li><a href="transparantie-bestuurlijke-kwestie.html" class="hover:text-green-200">Transparantie</a></li>                    <li><a href="waarom.html#contact" class="hover:text-green-200">Contact</a></li>
+                </ul>
+                <!-- Language Switcher Desktop -->
+                <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl" selected>🇳🇱 Nederlands</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="ko">🇽🇰 Shqip</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                </select>
+            </div>
+            
+            <!-- Mobile Menu Button & Language -->
+            <div class="md:hidden flex items-center gap-3">
+                <select id="languageSelectMobile" class="bg-green-800 text-white px-2 py-1 rounded text-xs cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl" selected>🇳🇱</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="ar">🇸🇦</option>
+                    <option value="ko">🇽🇰</option>
+                    <option value="fr">🇫🇷</option>
+                    <option value="tr">🇹🇷</option>
+                </select>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a>
+            <a href="about.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Over Ons</a>
+            <a href="waarom.html" class="block text-white hover:text-green-200 py-2 font-bold" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Waarom?</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statuten</a>
+            <a href="wist-u-dat-de-wet.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Wist u dat?</a>            <a href="transparantie-bestuurlijke-kwestie.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Transparantie</a>            <a href="waarom.html#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">🚀 Waarom? - De Reis Naar Transparantie</h1>
+            <p class="text-xl text-green-100 max-w-3xl mx-auto">
+                Ontdek waarom transparantie en goed beheer essentieel zijn voor onze gemeenschap, en hoe we samen stappen nemen naar vertrouwen en verantwoordelijkheid.
+            </p>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-20 px-4 bg-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-900 mb-16 text-center">De Reis Naar Transparantie</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Stap 1: Luisteren & Inzicht</h3>
+                        <p class="text-gray-700 mb-3">
+                            Leden stellen vragen over hoe het geld wordt gebruikt en hoe de moskee wordt bestuurd. Dit is gezond en normaal. Vragen stellen helpt de gemeenschap sterker te maken.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Wat is nodig:</strong> Open oren, geduld en bereidwilligheid om te luisteren naar zorgen van iedereen.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Stap 2: Dialoog Voeren</h3>
+                        <p class="text-gray-700 mb-3">
+                            We voeren gesprekken in WhatsApp-groepen en organiseren koffie-momenten met het bestuur. Dit laat zien dat iedereen mag spreken en vragen stellen.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Wat is nodig:</strong> Communicatie-kanalen, regelmatige overleggen, en een bestuur dat actief luistert.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Stap 3: Juridische Basis Checken</h3>
+                        <p class="text-gray-700 mb-3">
+                            We lezen de statuten (regels) van onze VZW. Dit zijn artikelen die vastleggen hoe we mogen werken. We controleren dat alles klopt met de wet.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Wat is nodig:</strong> Kennis van VZW-wet (Artikelen 11, 14, 15 en 33 van onze statuten) en juridisch inzicht.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Stap 4: Formele Procedure Inzetten</h3>
+                        <p class="text-gray-700 mb-3">
+                            Leden kunnen een 'Buitengewone Algemene Vergadering' aanvragen wanneer nodig. Dit is de formele manier om belangrijke dingen democratisch te bespreken.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Wat is nodig:</strong> 1 op 5 ondertekeningen van alle leden (minimaal 20% van de ledenbestand).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Stap 5: Samen Besluiten Nemen</h3>
+                        <p class="text-gray-700 mb-3">
+                            Op de vergadering stemmen alle leden over belangrijke zaken. Dit gebeurt eerlijk en anoniem. Dit is hoe we samen de toekomst bepalen.
+                        </p>
+                        <p class="text-sm text-gray-600">
+                            <strong>Resultaat:</strong> Een moskee met volledige transparantie en vertrouwen van alle leden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-900 mb-12 text-center">Veelgestelde Vragen</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">❓ Is dit fitna (twist)?</h3>
+                    <p class="text-gray-700">
+                        <strong>Antwoord: Nee!</strong> Transparantie is geen twist. Vragen stellen en eerlijk zijn is een islamitische plicht. Fitna ontstaat als we oneerlijk zijn en dingen verbergen. Duidelijkheid en vertrouwen voorkomen fitna.
+                    </p>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">🔐 Is de stemming anoniem?</h3>
+                    <p class="text-gray-700">
+                        <strong>Antwoord: Ja!</strong> We gebruiken stembriefjes zodat niemand kan zien wie je hebt gestemd. Dit geeft iedereen veiligheid. Je kunt stemmen wat je echt vindt, zonder druk of angst.
+                    </p>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">💰 Wat gebeurt er met donaties?</h3>
+                    <p class="text-gray-700">
+                        <strong>Antwoord:</strong> Alle donaties gaan naar de moskee. We gebruiken het geld voor: gebouw, elektriciteit, lessen, activiteiten en zorg voor leden in nood. Alles is geregistreerd en kan je terugvinden in de jaarrekening.
+                    </p>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">👥 Kunnen alle leden stemmen?</h3>
+                    <p class="text-gray-700">
+                        <strong>Antwoord: Ja!</strong> Alle leden hebben stemrecht. Dit staat in de statuten. Je stem is even belangrijk als die van ieder ander. Dit heet 'Shura' - samen overleggen.
+                    </p>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">📑 Hoe kan ik inzage krijgen in documenten?</h3>
+                    <p class="text-gray-700">
+                        <strong>Antwoord:</strong> Als je meer wilt weten, kun je de statuten downloaden hieronder. Je kunt ook contact opnemen met het bestuur. Alle leden hebben recht op informatie.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gradient-to-r from-green-900 to-green-800 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Sluit je bij ons aan</h2>
+            <p class="text-lg text-green-100 mb-8 max-w-2xl mx-auto">
+                Heb je vragen of wil je meer informatie? Neem contact op met onze gemeenschap via WhatsApp.
+            </p>
+            <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">
+                💬 WhatsApp Groep
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-950 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2"><strong>🌙 Moslim Gemeenschap Hoogstraten</strong></p>
+            <p class="text-green-200 text-sm mb-4">Naar een Professionele Moskee</p>
+            <p class="text-xs text-green-300">&copy; 2026 Moslim Gemeenschap Hoogstraten. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 px-4 py-6 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-start gap-2">
+                <span class="text-lg">🔒</span>
+                <div>
+                    <h3 class="font-bold text-xs text-gray-700 mb-1">Privacybeleid & Vertrouwelijkheid</h3>
+                    <p class="text-xs text-gray-500">
+                        Wij respecteren uw privacy volledig. Uw gegevens worden uitsluitend gebruikt voor communicatie met de gemeenschap en nooit gedeeld met derden. U hebt het recht om uw gegevens in te zien, aan te passen of te verwijderen. Voor vragen over privacy, neem contact op via WhatsApp of bezoek onze contactpagina.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'nl') {
+                window.location.href = 'waarom.html';
+            } else {
+                window.location.href = `waarom-${lang}.html`;
+            }
+        }
+    </script>
+</body>
+</html>

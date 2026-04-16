@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did You Know? The Law is Clear! - Muslim Community Hoogstraten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #064e3b; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9fafb; }
+        tr:hover { background-color: #f3f4f6; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Disclaimer:</strong> This is an independent platform of the mosque community in Hoogstraten. We are not affiliated with the official administration of Tawheed vzw, but we act as concerned members striving for transparency and good governance.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-12 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 Muslim Community Hoogstraten</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-4">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index-en.html" class="hover:text-green-200">Home</a></li>
+                    <li><a href="about-en.html" class="hover:text-green-200">About Us</a></li>
+                    <li><a href="waarom-en.html" class="hover:text-green-200">Why?</a></li>
+                    <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statutes</a></li>
+                    <li><a href="wist-u-dat-de-wet-en.html" class="hover:text-green-200 font-bold text-green-300">Did You Know?</a></li>
+                    <li><a href="wist-u-dat-de-wet-en.html#contact" class="hover:text-green-200">Contact</a></li>
+                </ul>
+                <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="en" selected>🇬🇧 English</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="ko">🇽🇰 Shqip</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                </select>
+            </div>
+            
+            <!-- Mobile Menu Button & Language -->
+            <div class="md:hidden flex items-center gap-3">
+                <select id="languageSelectMobile" class="bg-green-800 text-white px-2 py-1 rounded text-xs cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱</option>
+                    <option value="en" selected>🇬🇧</option>
+                    <option value="ar">🇸🇦</option>
+                    <option value="ko">🇽🇰</option>
+                    <option value="fr">🇫🇷</option>
+                    <option value="tr">🇹🇷</option>
+                </select>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a>
+            <a href="about-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">About Us</a>
+            <a href="waarom-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Why?</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statutes</a>
+            <a href="wist-u-dat-de-wet-en.html" class="block text-white hover:text-green-200 py-2 font-bold" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Did You Know?</a>            <a href="transparantie-bestuurlijke-kwestie-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Transparency</a>            <a href="wist-u-dat-de-wet-en.html#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">📚 Did You Know? The Law is Clear!</h1>
+            <p class="text-xl text-green-100 mb-8">Legal Framework: VZW Legislation in Practice</p>
+            <p class="text-lg text-green-50">Understand your rights as a member of a Non-Profit Association</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <!-- Intro Text -->
+            <div class="mb-12 bg-blue-50 p-8 rounded-lg border-l-4 border-blue-900">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">💡 What Does the Belgian Law Say?</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Many people think that a board of a non-profit association can decide everything on its own. However, Belgian law says something different: <strong>the members are in charge</strong>. The board has the task of managing the community's money, but members have the right to oversee and have a say.
+                </p>
+            </div>
+
+            <!-- Table Section -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-green-900 mb-8">📋 Rights and Duties Overview</h2>
+                <div class="overflow-x-auto rounded-lg shadow-md">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-green-900 text-white">
+                                <th class="w-1/4">Category</th>
+                                <th class="w-1/3">Member Rights (General Assembly)</th>
+                                <th class="w-1/3">Board Duties</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold text-green-900">💰 Finances</td>
+                                <td>Right to access all invoices, receipts and accounting records (Art. 3:103 WVV).</td>
+                                <td>Obligation to maintain transparent and complete accounting (Art. 3:47 WVV).</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">⚖️ Decision Making</td>
+                                <td>The General Assembly (GA) is the highest body and decides on appointments and bylaws.</td>
+                                <td>The board must execute decisions from the GA and cannot act outside the bylaws.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">🔍 Oversight</td>
+                                <td>1/5th of members can force an Extraordinary GA (Art. 9:14 WVV).</td>
+                                <td>The board must convene the GA within 21 days of a valid request from 1/5th of members.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">👥 Membership</td>
+                                <td>Right to register as a member after payment of contribution.</td>
+                                <td>The board is legally required to maintain an up-to-date member register (Art. 9:3 WVV).</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">📊 Accountability</td>
+                                <td>Right to annual financial statements and approval (discharge) of the board.</td>
+                                <td>The board must report annually to members on policy and finances.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Key Points -->
+            <div class="mb-12 bg-green-50 p-8 rounded-lg border-l-4 border-green-900">
+                <h2 class="text-2xl font-bold text-green-900 mb-6">🎯 Key Points</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Members are sovereign:</strong> In a non-profit association, members hold the authority, not the board.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Transparency is mandatory:</strong> The board must fully disclose financial information.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Democracy works:</strong> 1/5th of members can force an extraordinary meeting.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Good governance is required:</strong> The board must report annually to members.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Your vote counts:</strong> Each member has a say in the General Assembly.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Warning Section -->
+            <div class="mb-12 bg-red-50 p-8 rounded-lg border-l-4 border-red-900">
+                <h2 class="text-2xl font-bold text-red-900 mb-4">⚠️ Attention: Things That Are NOT Allowed</h2>
+                <p class="text-gray-700 mb-4">According to law, boards are NOT allowed to:</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>❌ Refuse access to financial documents</li>
+                    <li>❌ Avoid or delay the General Assembly</li>
+                    <li>❌ Remove members from the register without valid reason</li>
+                    <li>❌ Ignore requests for information</li>
+                    <li>❌ Spend money without member approval</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mb-12 bg-gradient-to-r from-green-900 to-green-800 text-white p-8 rounded-lg text-center">
+                <h2 class="text-2xl font-bold mb-4">📱 Have Questions? Get in Touch!</h2>
+                <p class="text-green-100 mb-6">Join our WhatsApp group for support and more information.</p>
+                <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">
+                    💬 WhatsApp Group
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2"><strong>🌙 Muslim Community Hoogstraten</strong></p>
+            <p class="text-green-200 text-sm mb-4">Towards a Professional Mosque</p>
+            <p class="text-xs text-green-300">&copy; 2026 Muslim Community Hoogstraten. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 px-4 py-6 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-start gap-2">
+                <span class="text-lg">🔒</span>
+                <div>
+                    <h3 class="font-bold text-xs text-gray-700 mb-1">Privacy Policy & Confidentiality</h3>
+                    <p class="text-xs text-gray-500">
+                        We fully respect your privacy. Your data is used only for community communication and is never shared with third parties. You have the right to view, modify or delete your data. For privacy questions, contact us via WhatsApp or our contact page.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'nl') {
+                window.location.href = 'wist-u-dat-de-wet.html';
+            } else {
+                window.location.href = `wist-u-dat-de-wet-${lang}.html`;
+            }
+        }
+    </script>
+</body>
+</html>

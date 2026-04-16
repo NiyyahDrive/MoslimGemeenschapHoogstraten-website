@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الشفافية: قضية إدارية - الجالية المسلمة هوخستراتن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .timeline { position: relative; padding: 20px 0; }
+        .timeline-item { margin-bottom: 30px; position: relative; padding-right: 30px; }
+        .timeline-item::before { 
+            content: ''; 
+            position: absolute; 
+            right: 0; 
+            top: 0; 
+            width: 20px; 
+            height: 20px; 
+            background: #dc2626; 
+            border-radius: 50%; 
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #dc2626;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            right: 9px;
+            top: 20px;
+            bottom: 0;
+            width: 2px;
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Banner -->
+    <div class="bg-red-100 border-b-4 border-red-500 px-4 py-4 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-red-900 text-right">
+                <strong>⚠️ بيان الشفافية:</strong> تتعامل هذه الصفحة مع قضية إدارية بناءً على مراسلات بريد إلكتروني محققة (فبراير - أبريل 2026).
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-16 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 لوحة الشفافية</div>
+            <div class="hidden md:flex gap-6 text-sm">
+                <a href="index-ar.html" class="hover:text-green-200">← العودة</a>
+                <a href="#feiten" class="hover:text-green-200">الحقائق</a>
+                <a href="#chronologie" class="hover:text-green-200">التسلسل الزمني</a>
+                <a href="#jouw-rechten" class="hover:text-green-200">حقوقك</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-red-900 to-red-800 text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">شفافية الإدارة</h1>
+            <p class="text-xl text-red-100 mb-6">
+                توثيق نزاع بين عضو والمجلس بشأن حقوق الوصول والعضوية
+            </p>
+            <div class="bg-red-800 p-4 rounded-lg inline-block">
+                <p class="text-sm"><strong>الفترة:</strong> 25 فبراير - 16 أبريل 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Summary -->
+            <div class="bg-blue-50 border-l-4 border-blue-900 p-8 rounded-lg mb-12">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">📋 ملخص الحالة</h2>
+                <ul class="space-y-3 text-gray-700 text-right">
+                    <li><strong>المبادرة:</strong> يطلب العضو رسميًا الوصول إلى المستندات الإدارية والمالية</li>
+                    <li><strong>الرد:</strong> يرفض المجلس، مدعيًا أن المتقدم ليس عضوًا</li>
+                    <li><strong>المضاعفة:</strong> دفع المتقدم 200 يورو وهو مسجل في الإدارة</li>
+                    <li><strong>الحالة:</strong> الخلاف لم يُحل؛ يهدد المتقدم باتخاذ إجراء قانوني</li>
+                </ul>
+            </div>
+
+            <!-- Facts -->
+            <div id="feiten" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">🔍 الحقائق</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h3 class="font-bold text-lg text-green-900 mb-3 text-right">✓ حقائق مثبتة</h3>
+                        <ul class="space-y-2 text-sm text-gray-700 text-right">
+                            <li>• دفع العضو 200 يورو (25 فبراير 2026)</li>
+                            <li>• تم قبول الدفع من قبل الإدارة</li>
+                            <li>• مسجل في ورقة "المساهمة 2024-2025-2026"</li>
+                            <li>• إثبات بريد إلكتروني من الإدارة</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                        <h3 class="font-bold text-lg text-red-900 mb-3 text-right">⚠️ المسائل القانونية</h3>
+                        <ul class="space-y-2 text-sm text-gray-700 text-right">
+                            <li>• انتهاك حقوق الفحص</li>
+                            <li>• تجاهل حقوق الوصول</li>
+                            <li>• رفض الاعتراف بالعضو المسجل</li>
+                            <li>• حذف البيانات بعد تصعيد النزاع</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div id="chronologie" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-right">📅 التسلسل الزمني</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-right">
+                            <p class="font-bold text-red-900">25 فبراير 2026</p>
+                            <p class="text-sm mt-2">دفع العضو 200 يورو، تلقى تأكيدًا من الإدارة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-right">
+                            <p class="font-bold text-red-900">25 فبراير - 6 أبريل (40 يومًا)</p>
+                            <p class="text-sm mt-2">صمت كامل من المجلس رغم الطلبات المتعددة</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-right">
+                            <p class="font-bold text-red-900">6 أبريل 2026</p>
+                            <p class="text-sm mt-2">إرسال إشعار قانوني رسمي يطلب المستندات</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-right">
+                            <p class="font-bold text-red-900">10 أبريل 2026</p>
+                            <p class="text-sm mt-2">رد المجلس: ينكر مركز العضوية</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-right">
+                            <p class="font-bold text-red-900">10 أبريل 2026</p>
+                            <p class="text-sm mt-2">تقديم الأدلة والإيصالات إلى المجلس</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-right">
+                            <p class="font-bold text-red-900">15 أبريل 2026</p>
+                            <p class="text-sm mt-2">انتهت المهلة؛ لا يوجد حل. القضية لا تزال مفتوحة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Your Rights -->
+            <div id="jouw-rechten" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-right">⚖️ حقوقك كعضو</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-900 text-right">
+                        <h3 class="font-bold text-blue-900 mb-3">حق الفحص</h3>
+                        <p class="text-sm text-gray-700">
+                            لديك الحق في فحص جميع كتب ودفاتر الجمعية. لا يُسمح بالرفض إلا في ظروف استثنائية.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-900 text-right">
+                        <h3 class="font-bold text-orange-900 mb-3">الإجراءات الصحيحة</h3>
+                        <p class="text-sm text-gray-700">
+                            يجب على المجلس اتباع الإجراءات الصحيحة. القرارات التعسفية تنتهك حقوقك.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-900 text-right">
+                        <h3 class="font-bold text-purple-900 mb-3">الإدارة الرشيدة</h3>
+                        <p class="text-sm text-gray-700">
+                            المجلس مسؤول عن الإدارة الرشيدة. قد يؤدي الفشل إلى المسؤولية الشخصية.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-pink-50 p-6 rounded-lg border-l-4 border-pink-900 text-right">
+                        <h3 class="font-bold text-pink-900 mb-3">المسؤولية الشخصية</h3>
+                        <p class="text-sm text-gray-700">
+                            أعضاء المجلس مسؤولون شخصيًا عن الانتهاكات. القرارات غير القانونية تثير المسؤولية.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal Disclaimer -->
+            <div class="bg-yellow-100 border-l-4 border-yellow-400 p-8 rounded-lg text-right">
+                <p class="text-sm text-yellow-900">
+                    <strong>📌 بيان قانوني:</strong> هذه الصفحة مادة إعلامية للأعضاء بناءً على مراسلات محققة وتحليل إطار قانوني. ليست استشارة قانونية مهنية. استشر محاميًا مؤهلاً للمسائل القانونية.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-green-900 to-green-800 text-white py-12 px-4 mt-16 text-right">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-4">🌙 <strong>الجالية المسلمة هوخستراتن</strong></p>
+            <p class="text-green-100 mb-2">
+                نحو الشفافية والمسؤولية والإدارة الرشيدة
+            </p>
+            <p class="text-sm text-green-200">
+                © 2026 الجالية المسلمة هوخستراتن. جميع الأعضاء يستحقون الوضوح والاحترام.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            const pages = {
+                'nl': 'transparantie-bestuurlijke-kwestie.html',
+                'en': 'transparantie-bestuurlijke-kwestie-en.html',
+                'ar': 'transparantie-bestuurlijke-kwestie-ar.html',
+                'ko': 'transparantie-bestuurlijke-kwestie-ko.html',
+                'fr': 'transparantie-bestuurlijke-kwestie-fr.html',
+                'tr': 'transparantie-bestuurlijke-kwestie-tr.html'
+            };
+            
+            if (pages[lang]) {
+                window.location.href = pages[lang];
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هل تعلم؟ القانون واضح جداً! - الجالية المسلمة في هوخستراتن</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: right; }
+        th { background-color: #064e3b; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9fafb; }
+        tr:hover { background-color: #f3f4f6; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ إخلاء المسؤولية:</strong> هذه منصة مستقلة من جالية المسجد في هوخستراتن. نحن لا نرتبط بالإدارة الرسمية لجمعية التوحيد، لكننا نتصرف كأعضاء مهتمين يسعون إلى الشفافية والإدارة الجيدة.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-12 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 الجالية المسلمة في هوخستراتن</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-4">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index-ar.html" class="hover:text-green-200">الرئيسية</a></li>
+                    <li><a href="about-ar.html" class="hover:text-green-200">عن الجالية</a></li>
+                    <li><a href="waarom-ar.html" class="hover:text-green-200">لماذا؟</a></li>
+                    <li><a href="statuten-en-wetten.html" class="hover:text-green-200">النظام الأساسي</a></li>
+                    <li><a href="wist-u-dat-de-wet-ar.html" class="hover:text-green-200 font-bold text-green-300">هل تعلم؟</a></li>
+                    <li><a href="transparantie-bestuurlijke-kwestie-ar.html" class="hover:text-green-200">الشفافية</a></li>
+                    <li><a href="index-ar.html#contact" class="hover:text-green-200">اتصل</a></li>
+                </ul>
+                <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="ar" selected>🇸🇦 العربية</option>
+                    <option value="ko">🇽🇰 Shqip</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                </select>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden flex items-center gap-3">
+                <select id="languageSelectMobile" class="bg-green-800 text-white px-2 py-1 rounded text-xs cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="ar" selected>🇸🇦</option>
+                    <option value="ko">🇽🇰</option>
+                    <option value="fr">🇫🇷</option>
+                    <option value="tr">🇹🇷</option>
+                </select>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index-ar.html" class="block text-white hover:text-green-200 py-2">الرئيسية</a>
+            <a href="about-ar.html" class="block text-white hover:text-green-200 py-2">عن الجالية</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2">الأنظمة</a>
+            <a href="wist-u-dat-de-wet-ar.html" class="block text-white hover:text-green-200 py-2 font-bold">هل تعلم؟</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">📚 هل تعلم؟ القانون واضح جداً!</h1>
+            <p class="text-xl text-green-100 mb-8">الإطار القانوني: تشريع الجمعيات في الممارسة العملية</p>
+            <p class="text-lg text-green-50">افهم حقوقك كعضو في جمعية غير ربحية</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <!-- Intro Text -->
+            <div class="mb-12 bg-blue-50 p-8 rounded-lg border-r-4 border-blue-900">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">💡 ماذا يقول القانون البلجيكي؟</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    يعتقد الكثير من الناس أن إدارة الجمعية يمكنها أن تقرر كل شيء بنفسها. لكن القانون البلجيكي يقول شيئاً مختلفاً: <strong>الأعضاء هم المسؤولون</strong>. للإدارة دور إدارة أموال الجالية، لكن للأعضاء حق الإشراف والمشاركة.
+                </p>
+            </div>
+
+            <!-- Table Section -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-green-900 mb-8">📋 ملخص الحقوق والواجبات</h2>
+                <div class="overflow-x-auto rounded-lg shadow-md">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-green-900 text-white">
+                                <th class="w-1/4">النوع</th>
+                                <th class="w-1/3">حقوق الأعضاء (الجلسة العامة)</th>
+                                <th class="w-1/3">واجبات الإدارة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold text-green-900">💰 الأموال</td>
+                                <td>الحق في الاطلاع على جميع الفواتير والإيصالات والدفاتر المحاسبية.</td>
+                                <td>الالتزام بإجراء محاسبة شفافة وكاملة.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">⚖️ صنع القرارات</td>
+                                <td>الجلسة العامة هي أعلى جهة وتقرر التعيينات والأنظمة.</td>
+                                <td>يجب على الإدارة تنفيذ قرارات الجلسة ولا تتجاوز الأنظمة.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">🔍 الرقابة</td>
+                                <td>واحد من كل خمسة أعضاء يمكن أن يطلب جلسة عامة استثنائية.</td>
+                                <td>على الإدارة استدعاء الجلسة خلال 21 يوم من طلب صحيح.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">👥 العضوية</td>
+                                <td>الحق في التسجيل كعضو بعد دفع الرسم.</td>
+                                <td>الإدارة ملزمة قانوناً بالحفاظ على سجل العضوية محدّثاً.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">📊 المساءلة</td>
+                                <td>الحق في البيانات المالية السنوية والموافقة على الإدارة.</td>
+                                <td>يجب على الإدارة تقديم تقرير سنوي للأعضاء.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Key Points -->
+            <div class="mb-12 bg-green-50 p-8 rounded-lg border-r-4 border-green-900">
+                <h2 class="text-2xl font-bold text-green-900 mb-6">🎯 النقاط المهمة</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>الأعضاء هم السادة:</strong> في الجمعية، للأعضاء السلطة وليس للإدارة.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>الشفافية إلزامية:</strong> يجب على الإدارة الكشف الكامل عن المعلومات المالية.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>الديمقراطية تعمل:</strong> واحد من كل خمسة أعضاء يمكن أن يطلب اجتماعاً استثنائياً.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>الإدارة الجيدة واجبة:</strong> يجب على الإدارة تقديم تقرير سنوي.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>صوتك مهم:</strong> لكل عضو دور في الجلسة العامة.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Warning Section -->
+            <div class="mb-12 bg-red-50 p-8 rounded-lg border-r-4 border-red-900">
+                <h2 class="text-2xl font-bold text-red-900 mb-4">⚠️ انتبه: أشياء ممنوعة</h2>
+                <p class="text-gray-700 mb-4">حسب القانون، ممنوع على الإدارة:</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>❌ رفض الاطلاع على الوثائق المالية</li>
+                    <li>❌ تجنب الجلسة العامة</li>
+                    <li>❌ حذف الأعضاء من السجل بدون سبب</li>
+                    <li>❌ تجاهل طلبات المعلومات</li>
+                    <li>❌ إنفاق الأموال بدون موافقة الأعضاء</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mb-12 bg-gradient-to-r from-green-900 to-green-800 text-white p-8 rounded-lg text-center">
+                <h2 class="text-2xl font-bold mb-4">📱 هل لديك أسئلة؟ تواصل معنا!</h2>
+                <p class="text-green-100 mb-6">انضم لمجموعة WhatsApp للحصول على الدعم والمعلومات.</p>
+                <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">
+                    💬 مجموعة WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2"><strong>🌙 الجالية المسلمة في هوخستراتن</strong></p>
+            <p class="text-green-200 text-sm mb-4">نحو مسجد احترافي</p>
+            <p class="text-xs text-green-300">&copy; 2026 الجالية المسلمة في هوخستراتن. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 px-4 py-6 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-start gap-2">
+                <span class="text-lg">🔒</span>
+                <div>
+                    <h3 class="font-bold text-xs text-gray-700 mb-1">سياسة الخصوصية والسرية</h3>
+                    <p class="text-xs text-gray-500">
+                        نحترم خصوصيتك بالكامل. تُستخدم بيانات هي فقط للتواصل مع الجالية ولا تُشارك أبداً مع أطراف ثالثة. لديك الحق في رؤية بيانات، تعديلها أو حذفها. لأسئلة الخصوصية، تواصل عبر WhatsApp أو صفحة التواصل.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'nl') {
+                window.location.href = 'wist-u-dat-de-wet.html';
+            } else {
+                window.location.href = `wist-u-dat-de-wet-${lang}.html`;
+            }
+        }
+    </script>
+</body>
+</html>

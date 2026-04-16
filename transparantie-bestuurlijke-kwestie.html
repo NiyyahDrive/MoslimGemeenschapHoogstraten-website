@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparantie: Bestuurlijke Kwestie - Moslim Gemeenschap Hoogstraten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .timeline { position: relative; padding: 20px 0; }
+        .timeline-item { margin-bottom: 30px; position: relative; padding-left: 30px; }
+        .timeline-item::before { 
+            content: ''; 
+            position: absolute; 
+            left: 0; 
+            top: 0; 
+            width: 20px; 
+            height: 20px; 
+            background: #dc2626; 
+            border-radius: 50%; 
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #dc2626;
+        }
+        .timeline-item.resolved::before { 
+            background: #16a34a;
+            box-shadow: 0 0 0 3px #16a34a;
+        }
+        .timeline::after {
+            content: '';
+            position: absolute;
+            left: 9px;
+            top: 20px;
+            bottom: 0;
+            width: 2px;
+            background: #e5e7eb;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header Banner -->
+    <div class="bg-red-100 border-b-4 border-red-500 px-4 py-4 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-red-900">
+                <strong>⚠️ TRANSPARANTIEVERKLARING:</strong> Deze pagina documenteert een bestuurlijke kwestie op basis van geverifieerde email-correspondentie (februari-april 2026). Dit is informatief materiaal voor leden.
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-16 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 Transparantie Dashboard</div>
+            <div class="hidden md:flex gap-6 text-sm">
+                <a href="index.html" class="hover:text-green-200">← Terug naar Website</a>
+                <a href="#feiten" class="hover:text-green-200">Feiten</a>
+                <a href="#chronologie" class="hover:text-green-200">Chronologie</a>
+                <a href="#jouw-rechten" class="hover:text-green-200">Jouw Rechten</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-red-900 to-red-800 text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Bestuurlijke Transparantie</h1>
+            <p class="text-xl text-red-100 mb-6">
+                Documentatie van een geschil tussen een lid en het bestuur over inzagerechten en lidmaatschap
+            </p>
+            <div class="bg-red-800 p-4 rounded-lg inline-block">
+                <p class="text-sm"><strong>Periode:</strong> 25 februari - 16 april 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto">
+            
+            <!-- Samenvatting -->
+            <div class="bg-blue-50 border-l-4 border-blue-900 p-8 rounded-lg mb-12">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">📋 Situatie Samenvatting</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li><strong>Initiatief:</strong> Lid verzoekt formeel inzage in administratie en financiële stukken</li>
+                    <li><strong>Respons:</strong> Bestuur weigert, stellende dat aanvrager geen lid is</li>
+                    <li><strong>Complicatie:</strong> Aanvrager heeft €200 contributie betaald en staat in administratie geregistreerd</li>
+                    <li><strong>Status:</strong> Geschil onopgelost; aanvrager dreigt gerechtelijke stappen</li>
+                </ul>
+            </div>
+
+            <!-- Feiten -->
+            <div id="feiten" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">🔍 De Feiten</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500">
+                        <h3 class="font-bold text-lg text-green-900 mb-3">✓ Bewezen Feiten</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>• Lid betaalde €200 (25 feb 2026)</li>
+                            <li>• Betaling aanvaard door administratie</li>
+                            <li>• Lid geregistreerd in "Contributie 2024-2025-2026" sheet</li>
+                            <li>• Email-correspondentie gedocumenteerd</li>
+                            <li>• Bestuur erkent ontvangst betaling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-red-500">
+                        <h3 class="font-bold text-lg text-red-900 mb-3">⚠️ Juridische Kwesties</h3>
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>• Geen inspectiedatum gezet (Art. 33)</li>
+                            <li>• Inzageverzoek genegeerd (Art. 9:3 WVV)</li>
+                            <li>• Bestuurslid verwijderde gegevens uit Excel</li>
+                            <li>• Geen schriftelijke afwijzingsreden gegeven</li>
+                            <li>• Onverklaarbare vastgoedtransactie (€51k notaris)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chronologie -->
+            <div id="chronologie" class="mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-8">📅 Chronologie der Gebeurtenissen</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <p class="font-bold text-gray-900">25 Februari 2026</p>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Lid verzoekt formeel inzage in administratie (Art. 9:3 WVV) en betaalt €200 als contributie
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Status: Betaling ontvangen ✓</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <p class="font-bold text-gray-900">25 Feb - 6 April (40 dagen)</p>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Bestuur stelt GEEN inspectiedatum in (vereist binnen 1 maand per Art. 33)
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Status: Geen reactie ✗</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <p class="font-bold text-gray-900">6 April 2026 (00:05)</p>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Lid stelt bestuur formeel in gebreke (ingebrekestelling). Dreigt met Art. 14 (Buitengewone AV) en gerechtelijke stappen
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Status: Escalatie inzet</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <p class="font-bold text-gray-900">10 April 2026 (14:44)</p>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Bestuur reageert: "U bent geen lid. Betaling was gift/onverschuldigd."
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Status: Bestuur verweert zich</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <p class="font-bold text-gray-900">10 April 2026 (17:51)</p>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Lid repliceert met Excel-gegevens: geregistreerd als "Contributie 2024-2025-2026", bestuurslid verwijderde 2026-gegevens, onverklaarbare vastgoedkosten (€51.000 notaris vs €125.000 huis)
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Status: Bewijzen aangeleverd</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="bg-white p-4 rounded-lg shadow">
+                            <p class="font-bold text-gray-900">15 April 2026 (12:00)</p>
+                            <p class="text-sm text-gray-600 mt-2">
+                                Deadline uit sommatie verstrijkt. Bestuur reageert niet verder.
+                            </p>
+                            <p class="text-xs text-gray-500 mt-2">Status: Onopgelost ⚠️</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jouw Rechten -->
+            <div id="jouw-rechten" class="bg-green-50 p-8 rounded-lg mb-12 border-l-4 border-green-900">
+                <h2 class="text-2xl font-bold text-green-900 mb-6">⚖️ Jouw Rechten als Lid (WVV)</h2>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-green-900 mb-3">Art. 9:3 WVV</h3>
+                        <p class="text-sm text-gray-700 mb-3">
+                            <strong>Inzagerecht:</strong> Je hebt het recht om in te zien:
+                        </p>
+                        <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                            <li>• Notulen van vergaderingen</li>
+                            <li>• Financiële stukken</li>
+                            <li>• Ledenregister</li>
+                            <li>• Alle relevante administratie</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-green-900 mb-3">Art. 33 (Statuten)</h3>
+                        <p class="text-sm text-gray-700 mb-3">
+                            <strong>Procedure:</strong> Bestuur MOET:
+                        </p>
+                        <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                            <li>• Datum voorstellen BINNEN 1 MAAND</li>
+                            <li>• Inzage mogelijk maken op kantoor</li>
+                            <li>• Geen arbitraire redenen geven</li>
+                            <li>• Schriftelijk antwoorden</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-green-900 mb-3">Art. 2:97 WVV</h3>
+                        <p class="text-sm text-gray-700 mb-3">
+                            <strong>Goed Beheer:</strong> VZW moet:
+                        </p>
+                        <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                            <li>• In goed vertrouwen handelen</li>
+                            <li>• Transparant zijn over financiën</li>
+                            <li>• Geen misbruik van macht</li>
+                            <li>• Redelijk beslissen</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 class="font-bold text-green-900 mb-3">Art. 2:56 WVW</h3>
+                        <p class="text-sm text-gray-700 mb-3">
+                            <strong>Aansprakelijkheid Bestuur:</strong>
+                        </p>
+                        <ul class="text-sm text-gray-700 space-y-1 ml-4">
+                            <li>• Bestuurders persoonlijk aansprakelijk</li>
+                            <li>• Voor schendingen van WVV</li>
+                            <li>• Schadevergoeding mogelijk</li>
+                            <li>• Bij gerechtelijke uitspraak</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kritische Vragen -->
+            <div class="bg-orange-50 p-8 rounded-lg mb-12 border-l-4 border-orange-500">
+                <h2 class="text-2xl font-bold text-orange-900 mb-6">❓ Kritische Vragen voor het Bestuur</h2>
+                
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded">
+                        <p class="font-bold text-orange-900 mb-2">1. Waarom werd geen inspectiedatum gesteld?</p>
+                        <p class="text-sm text-gray-700">Art. 33 verplicht dit. Stilzwijgen is niet wettelijk.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded">
+                        <p class="font-bold text-orange-900 mb-2">2. Waarom accepteerde het bestuur de €200 betaling als "contributie"?</p>
+                        <p class="text-sm text-gray-700">Maanden accepteren = stilzwijgende aanvaarding van lidmaatschap.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded">
+                        <p class="font-bold text-orange-900 mb-2">3. Waarom verwijderde een bestuurslid lid-gegevens uit Excel?</p>
+                        <p class="text-sm text-gray-700">Dit kan bewijsvervalsing zijn (strafwetboek Art. 228-236).</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded">
+                        <p class="font-bold text-orange-900 mb-2">4. Waarom €51.000 notariskosten voor €125.000 huis?</p>
+                        <p class="text-sm text-gray-700">Dit is onlogisch. Notariskosten wijzen op hogere aankoopsom.</p>
+                    </div>
+
+                    <div class="bg-white p-4 rounded">
+                        <p class="font-bold text-orange-900 mb-2">5. Waar zijn de AV-besluiten over vastgoedkoop?</p>
+                        <p class="text-sm text-gray-700">Leden hebben recht op inzage. Geen documenten getoond.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aanbevelingen -->
+            <div class="bg-blue-50 p-8 rounded-lg mb-12 border-l-4 border-blue-900">
+                <h2 class="text-2xl font-bold text-blue-900 mb-6">📌 Aanbevelingen voor Leden</h2>
+                
+                <ol class="space-y-4">
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 font-bold text-blue-900">1.</span>
+                        <div>
+                            <p class="font-bold text-gray-900">Controleer uw lidmaatschapsstatus</p>
+                            <p class="text-sm text-gray-700">Vraag het bestuur of u officieel lid bent. Vraag schriftelijk.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 font-bold text-blue-900">2.</span>
+                        <div>
+                            <p class="font-bold text-gray-900">Maak gebruik van uw inzagerecht</p>
+                            <p class="text-sm text-gray-700">Beroep je op Art. 9:3 WVV. Bestuur MOET meewerken.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 font-bold text-blue-900">3.</span>
+                        <div>
+                            <p class="font-bold text-gray-900">Zorg voor schriftelijke communicatie</p>
+                            <p class="text-sm text-gray-700">Alle aanvragen/reacties via email. Bewaar alles.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 font-bold text-blue-900">4.</span>
+                        <div>
+                            <p class="font-bold text-gray-900">Sluit je aan bij andere leden</p>
+                            <p class="text-sm text-gray-700">Gezamenlijke actie sterker. 1/5de leden kunnen BAV afdwingen.</p>
+                        </div>
+                    </li>
+
+                    <li class="flex gap-4">
+                        <span class="flex-shrink-0 font-bold text-blue-900">5.</span>
+                        <div>
+                            <p class="font-bold text-gray-900">Zoek juridisch advies</p>
+                            <p class="text-sm text-gray-700">VZW-advocaat kan formele stappen ondersteunen.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="bg-yellow-50 p-8 rounded-lg border-l-4 border-yellow-600">
+                <h2 class="text-xl font-bold text-yellow-900 mb-4">⚠️ Juridische Disclaimer</h2>
+                <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Dit is INFORMATIEF materiaal, geen juridisch advies</li>
+                    <li>• Feiten zijn gebaseerd op geverifieerde email-correspondentie</li>
+                    <li>• Juridische conclusies zijn voorlopig en onderhevig aan onderzoek</li>
+                    <li>• Voor formele juridische bijstand: raadpleeg een advocaat</li>
+                    <li>• Deze pagina is openbaar en objectief gebaseerd op feiten</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 px-4 mt-16">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2">Transparantie Dashboard | Moslim Gemeenschap Hoogstraten</p>
+            <p class="text-sm text-gray-400">Gedocumenteerd: 16 april 2026 | Gemaakt voor informatiedoeleinden</p>
+        </div>
+    </footer>
+</body>
+</html>

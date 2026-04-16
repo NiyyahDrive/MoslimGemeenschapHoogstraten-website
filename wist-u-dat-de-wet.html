@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wist u dat? De wet is heel duidelijk! - Moslim Gemeenschap Hoogstraten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #064e3b; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9fafb; }
+        tr:hover { background-color: #f3f4f6; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Disclaimer:</strong> Dit is een onafhankelijk platform van de moskeegemeenschap in Hoogstraten. Wij zijn niet gelieerd aan het officiële bestuur van de Tawheed vzw, maar treden op als bezorgde leden die streven naar transparantie en goed beheer.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-12 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 Moslim Gemeenschap Hoogstraten</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-4">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index.html" class="hover:text-green-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-green-200">Over Ons</a></li>
+                    <li><a href="waarom.html" class="hover:text-green-200">Waarom?</a></li>
+                    <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statuten</a></li>
+                    <li><a href="wist-u-dat-de-wet.html" class="hover:text-green-200 font-bold text-green-300">Wist u dat?</a></li>
+                    <li><a href="wist-u-dat-de-wet.html#contact" class="hover:text-green-200">Contact</a></li>
+                </ul>
+                <!-- Language Switcher Desktop -->
+                <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl" selected>🇳🇱 Nederlands</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="ko">🇽🇰 Shqip</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                </select>
+            </div>
+            
+            <!-- Mobile Menu Button & Language -->
+            <div class="md:hidden flex items-center gap-3">
+                <select id="languageSelectMobile" class="bg-green-800 text-white px-2 py-1 rounded text-xs cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl" selected>🇳🇱</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="ar">🇸🇦</option>
+                    <option value="ko">🇽🇰</option>
+                    <option value="fr">🇫🇷</option>
+                    <option value="tr">🇹🇷</option>
+                </select>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a>
+            <a href="about.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Over Ons</a>
+            <a href="waarom.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Waarom?</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statuten</a>
+            <a href="wist-u-dat-de-wet.html" class="block text-white hover:text-green-200 py-2 font-bold" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Wist u dat?</a>
+            <a href="wist-u-dat-de-wet.html#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">📚 Wist u dat? De wet is heel duidelijk!</h1>
+            <p class="text-xl text-green-100 mb-8">Wettelijk Kader: De VZW-Wetgeving in de Praktijk</p>
+            <p class="text-lg text-green-50">Begrijp uw rechten als lid van een Vereniging zonder Winstoogmerk</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <!-- Intro Text -->
+            <div class="mb-12 bg-blue-50 p-8 rounded-lg border-l-4 border-blue-900">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">💡 Wat zegt de Belgische wet?</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Veel mensen denken dat een bestuur van een vzw alles alleen mag beslissen. De Belgische wet zegt echter iets anders: <strong>de leden zijn de baas</strong>. Het bestuur heeft de taak om het geld van de gemeenschap te beheren, maar de leden hebben het recht om toezicht uit te oefenen en inspraak te hebben.
+                </p>
+            </div>
+
+            <!-- Table Section -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-green-900 mb-8">📋 Rechten en Plichten Overzicht</h2>
+                <div class="overflow-x-auto rounded-lg shadow-md">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-green-900 text-white">
+                                <th class="w-1/4">Onderdeel</th>
+                                <th class="w-1/3">Recht van de Leden (Algemene Vergadering)</th>
+                                <th class="w-1/3">Plicht van het Bestuur</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold text-green-900">💰 Financiën</td>
+                                <td>Recht op inzage in alle facturen, bonnetjes en de boekhouding (Art. 3:103 WVV).</td>
+                                <td>Verplichting om een transparante en volledige boekhouding te voeren (Art. 3:47 WVV).</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">⚖️ Bestuitsvorming</td>
+                                <td>De Algemene Vergadering (AV) is het hoogste orgaan en besluit over benoemingen en statuten.</td>
+                                <td>Het bestuur moet besluiten van de AV uitvoeren en mag niet buiten de statuten handelen.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">🔍 Controle</td>
+                                <td>1/5de van de leden kan een Buitengewone AV afdwingen (Art. 9:14 WVV).</td>
+                                <td>Het bestuur moet de AV bijeenroepen binnen 21 dagen na een geldig verzoek van 1/5de van de leden.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">👥 Lidmaatschap</td>
+                                <td>Recht op inschrijving in het ledenregister na betaling van de bijdrage.</td>
+                                <td>Het bestuur is wettelijk verplicht om actueel ledenregister bij te houden (Art. 9:3 WVV).</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">📊 Verantwoording</td>
+                                <td>Recht op de jaarrekening en discharge (goedkeuring) van het bestuur.</td>
+                                <td>Het bestuur moet jaarlijks verantwoording afleggen aan de leden over het gevoerde beleid en de financiën.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Key Points -->
+            <div class="mb-12 bg-green-50 p-8 rounded-lg border-l-4 border-green-900">
+                <h2 class="text-2xl font-bold text-green-900 mb-6">🎯 Belangrijkste Punten</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>De leden zijn soeverein:</strong> In een vzw hebben de leden het gezag, niet het bestuur.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Transparantie is verplicht:</strong> Het bestuur moet financiële gegevens volledig openleggen.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Democratie werkt:</strong> 1/5de van de leden kan een buitengewone vergadering afdwingen.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Goed beheer is verplichting:</strong> Het bestuur moet jaarlijks verantwoording afleggen.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Uw stem telt:</strong> Elk lid heeft inspraak in de Algemene Vergadering.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Warning Section -->
+            <div class="mb-12 bg-red-50 p-8 rounded-lg border-l-4 border-red-900">
+                <h2 class="text-2xl font-bold text-red-900 mb-4">⚠️ Let Op: Dingen die NIET mogen</h2>
+                <p class="text-gray-700 mb-4">Volgens de wet mogen besturen het volgende NIET doen:</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>❌ Weigeren financiële stukken in te zien</li>
+                    <li>❌ De Algemene Vergadering ontwijken of vermijden</li>
+                    <li>❌ Leden uit het register schrappen zonder geldige reden</li>
+                    <li>❌ Verzoeken voor informatie negeren</li>
+                    <li>❌ Geld uitgeven zonder toestemming van de leden</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mb-12 bg-gradient-to-r from-green-900 to-green-800 text-white p-8 rounded-lg text-center">
+                <h2 class="text-2xl font-bold mb-4">📱 Vragen? Neem contact op!</h2>
+                <p class="text-green-100 mb-6">Sluit je aan bij onze WhatsApp groep voor ondersteuning en meer informatie.</p>
+                <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">
+                    💬 WhatsApp Groep
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2"><strong>🌙 Moslim Gemeenschap Hoogstraten</strong></p>
+            <p class="text-green-200 text-sm mb-4">Naar een Professionele Moskee</p>
+            <p class="text-xs text-green-300">&copy; 2026 Moslim Gemeenschap Hoogstraten. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 px-4 py-6 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-start gap-2">
+                <span class="text-lg">🔒</span>
+                <div>
+                    <h3 class="font-bold text-xs text-gray-700 mb-1">Privacybeleid & Vertrouwelijkheid</h3>
+                    <p class="text-xs text-gray-500">
+                        Wij respecteren uw privacy volledig. Uw gegevens worden uitsluitend gebruikt voor communicatie met de gemeenschap en nooit gedeeld met derden. U hebt het recht om uw gegevens in te zien, aan te passen of te verwijderen. Voor vragen over privacy, neem contact op via WhatsApp of bezoek onze contactpagina.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'nl') {
+                window.location.href = 'wist-u-dat-de-wet.html';
+            } else {
+                window.location.href = `wist-u-dat-de-wet-${lang}.html`;
+            }
+        }
+    </script>
+</body>
+</html>

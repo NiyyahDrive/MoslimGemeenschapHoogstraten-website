@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tawheed VZW - Naar een Professionele Moskee</title>
+    <title>Moslim Gemeenschap Hoogstraten - Naar een Professionele Moskee</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Timeline styling */
@@ -170,21 +170,30 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Disclaimer:</strong> Dit is een onafhankelijk platform van de moskeegemeenschap in Hoogstraten. Wij zijn niet gelieerd aan het officiële bestuur van de Tawheed vzw, maar treden op als bezorgde leden die streven naar transparantie en goed beheer.
+            </p>
+        </div>
+    </div>
     
     <!-- Navigation -->
     <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">🌙 Tawheed</div>
+            <div class="text-2xl font-bold">🌙 Moslim Gemeenschap Hoogstraten</div>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-4">
                 <ul class="flex gap-8 text-sm">
+                    <li><a href="index.html" class="hover:text-green-200 font-bold text-green-300">Home</a></li>
                     <li><a href="about.html" class="hover:text-green-200">Over Ons</a></li>
-                    <li><a href="#waarom" class="hover:text-green-200">Waarom?</a></li>
-                    <li><a href="#timeline" class="hover:text-green-200">Tijdlijn</a></li>
-                    <li><a href="#faq" class="hover:text-green-200">Vragen</a></li>
+                    <li><a href="waarom.html" class="hover:text-green-200">Waarom?</a></li>
                     <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statuten</a></li>
-                    <li><a href="#contact" class="hover:text-green-200">Contact</a></li>
+                    <li><a href="wist-u-dat-de-wet.html" class="hover:text-green-200">Wist u dat?</a></li>
+                    <li><a href="transparantie-bestuurlijke-kwestie.html" class="hover:text-green-200">Transparantie</a></li>
+                    <li><a href="index.html#contact" class="hover:text-green-200">Contact</a></li>
                 </ul>
                 <!-- Language Switcher Desktop -->
                 <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
@@ -213,19 +222,20 @@
         
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index.html" class="block text-white hover:text-green-200 py-2 font-bold" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a>
             <a href="about.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Over Ons</a>
-            <a href="#waarom" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Waarom?</a>
-            <a href="#timeline" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Tijdlijn</a>
-            <a href="#faq" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Vragen</a>
+            <a href="waarom.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Waarom?</a>
             <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statuten</a>
-            <a href="#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+            <a href="wist-u-dat-de-wet.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Wist u dat?</a>
+            <a href="transparantie-bestuurlijke-kwestie.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Transparantie</a>
+            <a href="index.html#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-20 px-4">
         <div class="max-w-4xl mx-auto text-center fade-in">
-            <h1 class="text-5xl font-bold mb-4">Naar een Professionele Moskee Tawheed</h1>
+            <h1 class="text-5xl font-bold mb-4">Naar een Professionele Moskee Moslim Gemeenschap Hoogstraten</h1>
             <p class="text-xl text-green-100 mb-8">Samen bouwen aan een eerlijke en transparante toekomst</p>
             <p class="text-lg text-green-50">Met duidelijkheid, vertrouwen en samen verantwoordelijkheid nemen</p>
         </div>
@@ -255,7 +265,7 @@
             <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
                 <h4 class="font-bold text-yellow-900 mb-2">📋 Wat is een VZW?</h4>
                 <p class="text-gray-700">
-                    Tawheed is een Vereniging zonder Winstoogmerk (VZW). Dit betekent dat alle activiteiten in het teken staan van de gemeenschap. Er is geen winstoogmerk; alle ontvangen middelen worden volledig ingezet voor de realisatie van de doelstellingen.
+                    Tawheed VZW is een Vereniging zonder Winstoogmerk (VZW). Dit betekent dat alle activiteiten in het teken staan van de gemeenschap. Er is geen winstoogmerk; alle ontvangen middelen worden volledig ingezet voor de realisatie van de doelstellingen.
                 </p>
             </div>
         </div>
@@ -435,7 +445,7 @@
             <div class="text-center mb-12">
                 <div class="inline-block bg-blue-900 text-white px-6 py-2 rounded-full mb-4 text-sm font-bold">📊 ONLINE PEILING</div>
                 <h2 class="text-5xl font-bold text-green-900 mb-4">Modernisering en Transparantie</h2>
-                <h3 class="text-3xl font-bold text-blue-900 mb-4">Tawheed Hoogstraten</h3>
+                <h3 class="text-3xl font-bold text-blue-900 mb-4">Moslim Gemeenschap Hoogstraten</h3>
                 <p class="text-gray-700 text-lg max-w-3xl mx-auto">Jouw mening is belangrijk voor onze gemeenschap. Doe mee aan onze actuele stemming over de professionalisering van onze moskee.</p>
             </div>
             
@@ -515,7 +525,7 @@
                 <p class="text-gray-700 mb-6">
                     Hier kunnen we samen vragen stellen, ervaringen delen en elkaar helpen. Iedereen is welkom!
                 </p>
-                <a href="https://chat.whatsapp.com/GCHQpmwPs6A1Fbwcq13dTj?mode=gi_t" target="_blank" class="inline-block bg-green-900 text-white px-8 py-3 rounded hover:bg-green-800 font-bold transition text-lg">
+                <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-green-900 text-white px-8 py-3 rounded hover:bg-green-800 font-bold transition text-lg">
                     🤖 Join WhatsApp Groep
                 </a>
             </div>
@@ -532,15 +542,25 @@
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-green-900 to-green-800 text-white py-12 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="mb-4">🌙 <strong>Tawheed Gemeenschap Hoogstraten</strong></p>
+            <p class="mb-4">🌙 <strong>Moslim Gemeenschap Hoogstraten</strong></p>
             <p class="text-green-100 mb-8">
                 Naar een professionele moskee met eerlijkheid, duidelijkheid en vertrouwen
             </p>
             <p class="text-sm text-green-200">
-                © 2026 Tawheed VZW. Alle leden werken samen voor een sterkere gemeenschap.
+                © 2026 Moslim Gemeenschap Hoogstraten. Alle leden werken samen voor een sterkere gemeenschap.
             </p>
         </div>
     </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-sm font-bold text-gray-700 mb-3">🔒 Privacy & Vertrouwelijkheid</h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+                Wij respecteren de privacy van onze gemeenschap: persoonsgegevens worden uitsluitend gebruikt voor noodzakelijke communicatie en nooit gedeeld met derden of voor commerciële doeleinden. Alle gegevens worden veilig beheerd conform de Belgische AVG-wetgeving en u heeft te allen tijde recht op inzage of verwijdering. Voor vragen over uw privacy kunt u direct contact met ons opnemen via de officiële kanalen op deze website.
+            </p>
+        </div>
+    </div>
 
     <script>
         function changeLanguage(lang) {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tawheed VZW - Vers une Mosquée Professionnelle</title>
+    <title>Moslim Gemeenschap Hoogstraten - Vers une Mosquée Professionnelle</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Timeline styling */
@@ -170,21 +170,28 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Disclaimer:</strong> Dit is een onafhankelijk platform van de moskeegemeenschap in Hoogstraten. Wij zijn niet gelieerd aan het officiële bestuur van de Tawheed vzw, maar treden op als bezorgde leden die streven naar transparantie en goed beheer.
+            </p>
+        </div>
+    </div>
     
     <!-- Navigation -->
     <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-0 z-50 shadow-lg">
         <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">🌙 Tawheed</div>
+            <div class="text-2xl font-bold">🌙 Communauté Musulmane Hoogstraten</div>
             
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-4">
                 <ul class="flex gap-8 text-sm">
+                    <li><a href="index-fr.html" class="hover:text-green-200 font-bold text-green-300">Accueil</a></li>
                     <li><a href="about-fr.html" class="hover:text-green-200">À Propos</a></li>
-                    <li><a href="#pourquoi" class="hover:text-green-200">Pourquoi?</a></li>
-                    <li><a href="#timeline" class="hover:text-green-200">Chronologie</a></li>
-                    <li><a href="#faq" class="hover:text-green-200">Questions</a></li>
+                    <li><a href="waarom-fr.html" class="hover:text-green-200">Pourquoi?</a></li>
                     <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statuts</a></li>
-                    <li><a href="#contact" class="hover:text-green-200">Contact</a></li>
+                    <li><a href="wist-u-dat-de-wet-fr.html" class="hover:text-green-200">Saviez-vous?</a></li>                    <li><a href="transparantie-bestuurlijke-kwestie-fr.html" class="hover:text-green-200">Transparence</a></li>                    <li><a href="index-fr.html#contact" class="hover:text-green-200">Contact</a></li>
                 </ul>
                 <!-- Language Switcher Desktop -->
                 <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
@@ -213,19 +220,18 @@
         
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index-fr.html" class="block text-white hover:text-green-200 py-2 font-bold" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Accueil</a>
             <a href="about-fr.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">À Propos</a>
-            <a href="#pourquoi" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Pourquoi?</a>
-            <a href="#timeline" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Chronologie</a>
-            <a href="#faq" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Questions</a>
+            <a href="waarom-fr.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Pourquoi?</a>
             <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statuts</a>
-            <a href="#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+            <a href="wist-u-dat-de-wet-fr.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Saviez-vous?</a>            <a href="transparantie-bestuurlijke-kwestie-fr.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Transparence</a>            <a href="index-fr.html#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-20 px-4">
         <div class="max-w-4xl mx-auto text-center fade-in">
-            <h1 class="text-5xl font-bold mb-4">Vers une Mosquée Tawheed Professionnelle</h1>
+            <h1 class="text-5xl font-bold mb-4">Vers une Mosquée Communauté Musulmane Professionnelle</h1>
             <p class="text-xl text-green-100 mb-8">Ensemble, construire un avenir honnête et transparent</p>
             <p class="text-lg text-green-50">Avec clarté, confiance et responsabilité partagée</p>
         </div>
@@ -255,7 +261,7 @@
             <div class="mt-8 bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded">
                 <h4 class="font-bold text-yellow-900 mb-2">📋 Qu'est-ce qu'une ASBL?</h4>
                 <p class="text-gray-700">
-                    Tawheed est une Association Sans But Lucratif (ASBL). Cela signifie que toutes les activités sont dédiées à la communauté. Il n'y a pas de but lucratif; tous les moyens reçus sont entièrement utilisés pour la réalisation des objectifs.
+                    Communauté Musulmane Hoogstraten est une Association Sans But Lucratif (ASBL). Cela signifie que toutes les activités sont dédiées à la communauté. Il n'y a pas de but lucratif; tous les moyens reçus sont entièrement utilisés pour la réalisation des objectifs.
                 </p>
             </div>
         </div>
@@ -421,7 +427,7 @@
             <div class="text-center mb-12">
                 <div class="inline-block bg-blue-900 text-white px-6 py-2 rounded-full mb-4 text-sm font-bold">📊 SONDAGE EN DIRECT</div>
                 <h2 class="text-5xl font-bold text-green-900 mb-4">Modernisation et Transparence</h2>
-                <h3 class="text-3xl font-bold text-blue-900 mb-4">Tawheed Hoogstraten</h3>
+                <h3 class="text-3xl font-bold text-blue-900 mb-4">Moslim Gemeenschap Hoogstraten</h3>
                 <p class="text-gray-700 text-lg max-w-3xl mx-auto">Votre avis est important pour notre communauté. Participez à notre sondage actuel sur la professionnalisation de notre mosquée.</p>
             </div>
             
@@ -462,7 +468,7 @@
                 <a href="statuten-en-wetten.html" class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition text-center">
                     <div class="text-5xl mb-4">📜</div>
                     <h3 class="text-xl font-bold text-green-900 mb-2">Statuts & Lois</h3>
-                    <p class="text-gray-600 mb-4">Tous les documents officiels de Tawheed VZW.</p>
+                    <p class="text-gray-600 mb-4">Tous les documents officiels de Moslim Gemeenschap Hoogstraten.</p>
                     <button class="bg-green-900 text-white px-6 py-2 rounded hover:bg-green-800 font-bold">Voir tous les documents</button>
                 </a>
 
@@ -484,7 +490,7 @@
             <div class="bg-green-50 p-8 rounded-lg text-center border-2 border-green-900">
                 <h3 class="text-2xl font-bold text-green-900 mb-4">💬 Rejoignez Notre Groupe WhatsApp</h3>
                 <p class="text-gray-700 mb-6">Ici, nous pouvons poser des questions ensemble et nous entraider.</p>
-                <a href="https://chat.whatsapp.com/GCHQpmwPs6A1Fbwcq13dTj?mode=gi_t" target="_blank" class="inline-block bg-green-900 text-white px-8 py-3 rounded hover:bg-green-800 font-bold transition text-lg">
+                <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-green-900 text-white px-8 py-3 rounded hover:bg-green-800 font-bold transition text-lg">
                     🤖 Rejoindre le Groupe WhatsApp
                 </a>
             </div>
@@ -494,11 +500,21 @@
     <!-- Footer -->
     <footer class="bg-gradient-to-r from-green-900 to-green-800 text-white py-12 px-4">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="mb-4">🌙 <strong>Communauté Tawheed Hoogstraten</strong></p>
+            <p class="mb-4">🌙 <strong>Communauté Moslim Gemeenschap Hoogstraten</strong></p>
             <p class="text-green-100 mb-8">Vers une mosquée professionnelle avec honnêteté, clarté et confiance</p>
-            <p class="text-sm text-green-200">© 2026 Tawheed VZW. Tous les membres travaillent ensemble pour une communauté plus forte.</p>
+            <p class="text-sm text-green-200">© 2026 Moslim Gemeenschap Hoogstraten. Tous les membres travaillent ensemble pour une communauté plus forte.</p>
         </div>
     </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 py-8 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-sm font-bold text-gray-700 mb-3">🔒 Confidentialité & Vie Privée</h3>
+            <p class="text-xs text-gray-500 leading-relaxed">
+                Nous respectons la vie privée de notre communauté : les données personnelles sont utilisées exclusivement pour les communications nécessaires et ne sont jamais partagées avec des tiers ou à des fins commerciales. Toutes les données sont gérées de manière sécurisée conformément à la législation RGPD belge et vous avez le droit d'accéder à vos données ou de les supprimer à tout moment. Pour toute question concernant votre confidentialité, vous pouvez nous contacter directement par le biais des canaux officiels sur ce site.
+            </p>
+        </div>
+    </div>
 
     <script>
         function changeLanguage(lang) {
@@ -547,7 +563,7 @@
             🗳️<br>VOTER<br>MAINTENANT
         </a>
         <!-- CHAT (Groen) -->
-        <a href="https://chat.whatsapp.com/GzLp4eQUqJf5qUtvYXcVqp?mode=gi_t" target="_blank" style="width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, #25D366, #128C7E); display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-weight: bold; font-size: 11px; text-align: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.15)'; this.style.boxShadow='0 6px 25px rgba(37, 211, 102, 0.8)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(37, 211, 102, 0.5)';" title="Chat">
+        <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" style="width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, #25D366, #128C7E); display: flex; align-items: center; justify-content: center; color: white; text-decoration: none; font-weight: bold; font-size: 11px; text-align: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.5); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='scale(1.15)'; this.style.boxShadow='0 6px 25px rgba(37, 211, 102, 0.8)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(37, 211, 102, 0.5)';" title="Chat">
             💬<br>CHAT
         </a>
     </div>

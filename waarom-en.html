@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why? - The Journey to Transparency - Muslim Community Hoogstraten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .timeline { position: relative; padding: 20px 0; }
+        .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 4px; height: 100%; background: linear-gradient(to bottom, #064e3b, #a3e635); }
+        @media (max-width: 768px) { .timeline::before { left: 25px; } }
+        .timeline-item { margin-bottom: 50px; position: relative; }
+        .timeline-item::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); width: 24px; height: 24px; background: #064e3b; border: 4px solid white; border-radius: 50%; top: 0; z-index: 10; box-shadow: 0 0 0 4px #e5e7eb; }
+        @media (max-width: 768px) { .timeline-item::before { left: 25px; } }
+        .timeline-content { width: 45%; margin-left: auto; padding-right: 50px; }
+        .timeline-item:nth-child(even) .timeline-content { margin-left: 0; margin-right: auto; padding-right: 0; padding-left: 50px; }
+        @media (max-width: 768px) { .timeline-content, .timeline-item:nth-child(even) .timeline-content { width: calc(100% - 65px); margin-left: 0 !important; margin-right: 0 !important; padding-left: 50px !important; padding-right: 0 !important; } }
+        .fade-in { animation: fadeIn 0.6s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Disclaimer:</strong> This is an independent platform of the mosque community in Hoogstraten. We are not affiliated with the official board of Tawheed vzw, but act as concerned members striving for transparency and good governance.
+            </p>
+        </div>
+    </div>
+    
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-12 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 Muslim Community Hoogstraten</div>
+            <div class="hidden md:flex items-center gap-4">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index-en.html" class="hover:text-green-200">Home</a></li>
+                    <li><a href="about-en.html" class="hover:text-green-200">About Us</a></li>
+                    <li><a href="waarom-en.html" class="hover:text-green-200 font-bold text-green-300">Why?</a></li>
+                    <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statutes</a></li>
+                    <li><a href="wist-u-dat-de-wet-en.html" class="hover:text-green-200">Did You Know?</a></li>
+                    <li><a href="transparantie-bestuurlijke-kwestie-en.html" class="hover:text-green-200">Transparency</a></li>
+                    <li><a href="index-en.html#contact" class="hover:text-green-200">Contact</a></li>
+                </ul>
+                <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="en" selected>🇬🇧 English</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="ko">🇽🇰 Shqip</option>
+                    <option value="fr">🇫🇷 Français</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                </select>
+            </div>
+            <div class="md:hidden flex items-center gap-3">
+                <select id="languageSelectMobile" class="bg-green-800 text-white px-2 py-1 rounded text-xs cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱</option>
+                    <option value="en" selected>🇬🇧</option>
+                    <option value="ar">🇸🇦</option>
+                    <option value="ko">🇽🇰</option>
+                    <option value="fr">🇫🇷</option>
+                    <option value="tr">🇹🇷</option>
+                </select>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Home</a>
+            <a href="about-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">About Us</a>
+            <a href="waarom-en.html" class="block text-white hover:text-green-200 py-2 font-bold" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Why?</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Statutes</a>
+            <a href="wist-u-dat-de-wet-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Did You Know?</a>
+            <a href="transparantie-bestuurlijke-kwestie-en.html" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Transparency</a>
+            <a href="index-en.html#contact" class="block text-white hover:text-green-200 py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+        </div>
+    </nav>
+
+    <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">🚀 Why? - The Journey to Transparency</h1>
+            <p class="text-xl text-green-100 max-w-3xl mx-auto">Discover why transparency and good governance are essential for our community, and how we take steps together towards trust and accountability.</p>
+        </div>
+    </section>
+
+    <section class="py-20 px-4 bg-gray-100">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-900 mb-16 text-center">The Journey to Transparency</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Step 1: Listening & Understanding</h3>
+                        <p class="text-gray-700 mb-3">Members ask questions about how money is used and how the mosque is managed. This is healthy and normal. Asking questions helps the community grow stronger.</p>
+                        <p class="text-sm text-gray-600"><strong>What's needed:</strong> Open ears, patience, and willingness to listen to everyone's concerns.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Step 2: Dialogue</h3>
+                        <p class="text-gray-700 mb-3">We have conversations in WhatsApp groups and organize coffee meetings with the board. This shows everyone can speak and ask questions.</p>
+                        <p class="text-sm text-gray-600"><strong>What's needed:</strong> Communication channels, regular meetings, and an active listening board.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Step 3: Check Legal Basis</h3>
+                        <p class="text-gray-700 mb-3">We read our VZW statutes (rules). These are articles that define how we can operate. We verify everything complies with the law.</p>
+                        <p class="text-sm text-gray-600"><strong>What's needed:</strong> Knowledge of VZW law and legal insight.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Step 4: Formal Procedures</h3>
+                        <p class="text-gray-700 mb-3">Members can request an Extraordinary General Assembly when needed. This is the formal way to discuss important matters democratically.</p>
+                        <p class="text-sm text-gray-600"><strong>What's needed:</strong> 1 in 5 member signatures (minimum 20% of membership).</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-content bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold text-green-900 mb-2">Step 5: Make Decisions Together</h3>
+                        <p class="text-gray-700 mb-3">At the assembly, all members vote on important matters. This happens fairly and anonymously. This is how we shape our future together.</p>
+                        <p class="text-sm text-gray-600"><strong>Result:</strong> A mosque with full transparency and trust from all members.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold text-green-900 mb-12 text-center">Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">❓ Is this fitna (discord)?</h3>
+                    <p class="text-gray-700"><strong>Answer: No!</strong> Transparency is not discord. Asking questions and being honest is an Islamic duty. Discord arises when we are dishonest and hide things. Clarity and trust prevent discord.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">🔐 Is voting anonymous?</h3>
+                    <p class="text-gray-700"><strong>Answer: Yes!</strong> We use voting ballots so no one can see how you voted. This gives everyone safety. You can vote what you truly believe, without pressure or fear.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">💰 What happens to donations?</h3>
+                    <p class="text-gray-700"><strong>Answer:</strong> All donations go to the mosque. We use the money for: building, electricity, classes, activities, and care for members in need. Everything is recorded and can be found in the annual report.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">👥 Can all members vote?</h3>
+                    <p class="text-gray-700"><strong>Answer: Yes!</strong> All members have voting rights. This is in the statutes. Your vote is as important as anyone else's. This is called 'Shura' - consultation.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-900">
+                    <h3 class="text-xl font-bold text-green-900 mb-3">📑 How can I access documents?</h3>
+                    <p class="text-gray-700"><strong>Answer:</strong> If you want to know more, you can download the statutes. You can also contact the board. All members have the right to information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-16 px-4 bg-gradient-to-r from-green-900 to-green-800 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Join Us</h2>
+            <p class="text-lg text-green-100 mb-8 max-w-2xl mx-auto">Do you have questions or want more information? Contact our community via WhatsApp.</p>
+            <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">💬 WhatsApp Group</a>
+        </div>
+    </section>
+
+    <footer class="bg-green-950 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2"><strong>🌙 Muslim Community Hoogstraten</strong></p>
+            <p class="text-green-200 text-sm mb-4">Towards a Professional Mosque</p>
+            <p class="text-xs text-green-300">&copy; 2026 Muslim Community Hoogstraten. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="bg-gray-100 px-4 py-6 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-start gap-2">
+                <span class="text-lg">🔒</span>
+                <div>
+                    <h3 class="font-bold text-xs text-gray-700 mb-1">Privacy Policy & Confidentiality</h3>
+                    <p class="text-xs text-gray-500">We fully respect your privacy. Your data is used exclusively for community communication and never shared with third parties. You have the right to view, modify or delete your data. For privacy questions, contact us via WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'nl') {
+                window.location.href = 'waarom.html';
+            } else {
+                window.location.href = `waarom-${lang}.html`;
+            }
+        }
+    </script>
+</body>
+</html>

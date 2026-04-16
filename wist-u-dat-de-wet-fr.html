@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saviez-vous? La Loi est Très Claire! - Communauté Musulmane Hoogstraten</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        table { border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #064e3b; color: white; font-weight: bold; }
+        tr:nth-child(even) { background-color: #f9fafb; }
+        tr:hover { background-color: #f3f4f6; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Disclaimer Banner -->
+    <div class="bg-yellow-100 border-b-4 border-yellow-400 px-4 py-3 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto">
+            <p class="text-sm text-gray-800">
+                <strong>⚠️ Avertissement:</strong> Ceci est une plateforme indépendante de la communauté mosquée à Hoogstraten. Nous ne sommes pas affiliés à l'administration officielle de Tawheed vzw, mais agissons en tant que membres concernés qui s'efforcent pour la transparence et la bonne gestion.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-900 to-green-800 text-white sticky top-12 z-50 shadow-lg">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">🌙 Communauté Musulmane Hoogstraten</div>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-4">
+                <ul class="flex gap-8 text-sm">
+                    <li><a href="index-fr.html" class="hover:text-green-200">Accueil</a></li>
+                    <li><a href="about-fr.html" class="hover:text-green-200">À Propos</a></li>
+                    <li><a href="waarom-fr.html" class="hover:text-green-200">Pourquoi?</a></li>
+                    <li><a href="statuten-en-wetten.html" class="hover:text-green-200">Statuts</a></li>
+                    <li><a href="wist-u-dat-de-wet-fr.html" class="hover:text-green-200 font-bold text-green-300">Saviez-vous?</a></li>
+                    <li><a href="transparantie-bestuurlijke-kwestie-fr.html" class="hover:text-green-200">Transparence</a></li>
+                    <li><a href="index-fr.html#contact" class="hover:text-green-200">Contact</a></li>
+                </ul>
+                <select id="languageSelect" class="bg-green-800 text-white px-3 py-2 rounded text-sm cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱 Nederlands</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="ar">🇸🇦 العربية</option>
+                    <option value="ko">🇽🇰 Shqip</option>
+                    <option value="fr" selected>🇫🇷 Français</option>
+                    <option value="tr">🇹🇷 Türkçe</option>
+                </select>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden flex items-center gap-3">
+                <select id="languageSelectMobile" class="bg-green-800 text-white px-2 py-1 rounded text-xs cursor-pointer hover:bg-green-700" onchange="changeLanguage(this.value)">
+                    <option value="nl">🇳🇱</option>
+                    <option value="en">🇬🇧</option>
+                    <option value="ar">🇸🇦</option>
+                    <option value="ko">🇽🇰</option>
+                    <option value="fr" selected>🇫🇷</option>
+                    <option value="tr">🇹🇷</option>
+                </select>
+                <button id="mobileMenuBtn" class="text-2xl hover:text-green-200" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">☰</button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-green-800 px-4 py-3 space-y-2">
+            <a href="index-fr.html" class="block text-white hover:text-green-200 py-2">Accueil</a>
+            <a href="about-fr.html" class="block text-white hover:text-green-200 py-2">À Propos</a>
+            <a href="statuten-en-wetten.html" class="block text-white hover:text-green-200 py-2">Statuts</a>
+            <a href="wist-u-dat-de-wet-fr.html" class="block text-white hover:text-green-200 py-2 font-bold">Saviez-vous?</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-green-900 to-green-800 text-white py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">📚 Saviez-vous? La Loi est Très Claire!</h1>
+            <p class="text-xl text-green-100 mb-8">Cadre Juridique: La Législation des Associations en Pratique</p>
+            <p class="text-lg text-green-50">Comprendre vos droits en tant que membre d'une Association sans But Lucratif</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <!-- Intro Text -->
+            <div class="mb-12 bg-blue-50 p-8 rounded-lg border-l-4 border-blue-900">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">💡 Que Dit la Loi Belge?</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Beaucoup de gens pensent qu'un conseil d'administration peut décider de tout seul. Cependant, la loi belge dit quelque chose de différent: <strong>les membres sont responsables</strong>. Le conseil a la tâche de gérer l'argent de la communauté, mais les membres ont le droit de surveiller et de participer.
+                </p>
+            </div>
+
+            <!-- Table Section -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-green-900 mb-8">📋 Aperçu des Droits et Devoirs</h2>
+                <div class="overflow-x-auto rounded-lg shadow-md">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="bg-green-900 text-white">
+                                <th class="w-1/4">Catégorie</th>
+                                <th class="w-1/3">Droits des Membres (Assemblée Générale)</th>
+                                <th class="w-1/3">Devoirs du Conseil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="font-bold text-green-900">💰 Finances</td>
+                                <td>Droit d'accès à toutes les factures, reçus et registres comptables (Art. 3:103 WVV).</td>
+                                <td>Obligation de maintenir une comptabilité transparente et complète (Art. 3:47 WVV).</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">⚖️ Prise de Décisions</td>
+                                <td>L'Assemblée Générale (AG) est l'organe suprême et décide des nominations et statuts.</td>
+                                <td>Le conseil doit exécuter les décisions de l'AG et ne peut pas agir en dehors des statuts.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">🔍 Contrôle</td>
+                                <td>1/5ème des membres peut forcer une AG Extraordinaire (Art. 9:14 WVV).</td>
+                                <td>Le conseil doit convoquer l'AG dans les 21 jours suivant une demande valide de 1/5ème des membres.</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">👥 Adhésion</td>
+                                <td>Droit d'inscription en tant que membre après paiement de la cotisation.</td>
+                                <td>Le conseil est légalement tenu de tenir un registre des membres à jour (Art. 9:3 WVV).</td>
+                            </tr>
+                            <tr>
+                                <td class="font-bold text-green-900">📊 Responsabilité</td>
+                                <td>Droit aux comptes annuels et approbation (décharge) du conseil.</td>
+                                <td>Le conseil doit rendre des comptes annuellement aux membres sur la politique et les finances.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Key Points -->
+            <div class="mb-12 bg-green-50 p-8 rounded-lg border-l-4 border-green-900">
+                <h2 class="text-2xl font-bold text-green-900 mb-6">🎯 Points Clés</h2>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Les membres sont souverains:</strong> Dans une association, les membres ont l'autorité, pas le conseil.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>La transparence est obligatoire:</strong> Le conseil doit divulguer complètement les informations financières.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>La démocratie fonctionne:</strong> 1/5ème des membres peut forcer une réunion extraordinaire.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>La bonne gouvernance est requise:</strong> Le conseil doit faire rapport annuellement aux membres.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-2xl text-green-900">✓</span>
+                        <span><strong>Votre vote compte:</strong> Chaque membre a son mot à dire à l'Assemblée Générale.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Warning Section -->
+            <div class="mb-12 bg-red-50 p-8 rounded-lg border-l-4 border-red-900">
+                <h2 class="text-2xl font-bold text-red-900 mb-4">⚠️ Attention: Choses Qui Ne Sont PAS Autorisées</h2>
+                <p class="text-gray-700 mb-4">Selon la loi, les conseils ne peuvent PAS:</p>
+                <ul class="space-y-2 text-gray-700">
+                    <li>❌ Refuser l'accès aux documents financiers</li>
+                    <li>❌ Éviter ou retarder l'Assemblée Générale</li>
+                    <li>❌ Radier les membres du registre sans raison valide</li>
+                    <li>❌ Ignorer les demandes d'information</li>
+                    <li>❌ Dépenser de l'argent sans approbation des membres</li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mb-12 bg-gradient-to-r from-green-900 to-green-800 text-white p-8 rounded-lg text-center">
+                <h2 class="text-2xl font-bold mb-4">📱 Avez-vous des Questions? Contactez-nous!</h2>
+                <p class="text-green-100 mb-6">Rejoignez notre groupe WhatsApp pour le soutien et plus d'informations.</p>
+                <a href="https://chat.whatsapp.com/JygTiazf4PwJjJ8xOJqbwa?mode=gi_t" target="_blank" class="inline-block bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">
+                    💬 Groupe WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-8 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <p class="mb-2"><strong>🌙 Communauté Musulmane Hoogstraten</strong></p>
+            <p class="text-green-200 text-sm mb-4">Vers une Mosquée Professionnelle</p>
+            <p class="text-xs text-green-300">&copy; 2026 Communauté Musulmane Hoogstraten. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Privacy Section -->
+    <div class="bg-gray-100 px-4 py-6 border-t border-gray-300">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-start gap-2">
+                <span class="text-lg">🔒</span>
+                <div>
+                    <h3 class="font-bold text-xs text-gray-700 mb-1">Politique de Confidentialité et Confidentialité</h3>
+                    <p class="text-xs text-gray-500">
+                        Nous respectons votre vie privée entièrement. Vos données ne sont utilisées que pour la communication avec la communauté et ne sont jamais partagées avec des tiers. Vous avez le droit de voir, modifier ou supprimer vos données. Pour les questions de confidentialité, contactez-nous via WhatsApp ou notre page de contact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'nl') {
+                window.location.href = 'wist-u-dat-de-wet.html';
+            } else {
+                window.location.href = `wist-u-dat-de-wet-${lang}.html`;
+            }
+        }
+    </script>
+</body>
+</html>
